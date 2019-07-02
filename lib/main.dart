@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
 import 'screens/home.dart';
+import 'api.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  Api api = Api();
+  api.search("naruto");
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
