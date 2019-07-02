@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../delegates/data_search.dart';
+
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,9 @@ class Home extends StatelessWidget {
           ),
           IconButton(
             icon: Icon(Icons.search),
-            onPressed: () {},
+            onPressed: () {
+              showSearch(context: context, delegate: DataSearch());
+            },
           )
         ],
       ),
