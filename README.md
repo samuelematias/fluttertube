@@ -9,10 +9,13 @@
 
 <br/>
 <!-- show case/gif section -->
-<!-- <p align="center">
-    <img alt="Flutter App 1" height="620" src="" />
+<p align="center">
+    <img alt="Flutter App 1" height="620" src="https://media.giphy.com/media/Yrf3BVfe67ypJUkTx8/giphy.gif" />
+    <img alt="Flutter App 2" height="620" src="https://media.giphy.com/media/ibXbdbH4UzdOqF9zDj/giphy.gif" />
+    <img alt="Flutter App 3" height="620" src="https://media.giphy.com/media/iibjzybZFCUmVGqJED/giphy.gif" />
+    <img alt="Flutter App 4" height="620" src="https://media.giphy.com/media/iDaH7WJCCBuybyD3WQ/giphy.gif" />
  />
-</p> -->
+</p>
 <!-- show case/gif section END -->
 
 <br/>
