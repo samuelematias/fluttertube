@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../blocs/videos_bloc.dart';
 import '../delegates/data_search.dart';
+import '../widgets/videotile.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -36,12 +37,16 @@ class Home extends StatelessWidget {
           )
         ],
       ),
+      backgroundColor: Colors.black87,
       body: StreamBuilder(
         stream: BlocProvider.of<VideosBloc>(context).outVideos,
         builder: (context, snapshot) {
-          if (snapshot != null)
+          if (snapshot.hasData)
             return ListView.builder(
-              itemBuilder: null,
+              itemBuilder: (context, index) {
+                return VideoTile(snapshot.data[index]);
+              },
+              itemCount: snapshot.data.length,
             );
           else
             return Container();
