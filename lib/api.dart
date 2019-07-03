@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 
 import 'models/video.dart';
 
-const API_KEY = "AIzaSyCCXTqKni1CpzHcdY5hh-SCOB7PZf7x4PI";
+const API_KEY = "AIzaSyAf0oW5DBp8p3Efrc539qxDIMKtRueJ73c";
 
 class Api {
   String _search;
