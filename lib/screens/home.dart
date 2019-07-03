@@ -6,6 +6,7 @@ import '../blocs/videos_bloc.dart';
 import '../delegates/data_search.dart';
 import '../models/video.dart';
 import '../widgets/videotile.dart';
+import 'favorites.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -37,7 +38,10 @@ class Home extends StatelessWidget {
           ),
           IconButton(
             icon: Icon(Icons.star),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => Favorites()));
+            },
           ),
           IconButton(
             icon: Icon(Icons.search),

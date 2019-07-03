@@ -11,7 +11,7 @@ class VideoTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bloc = BlocProvider.of<FavoriteBloc>(context);
+    final favoriteBloc = BlocProvider.of<FavoriteBloc>(context);
 
     return Container(
       margin: EdgeInsets.symmetric(vertical: 4),
@@ -50,7 +50,7 @@ class VideoTile extends StatelessWidget {
                 ),
               ),
               StreamBuilder<Map<String, Video>>(
-                stream: bloc.outFav,
+                stream: favoriteBloc.outFav,
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
                     return IconButton(
@@ -60,7 +60,7 @@ class VideoTile extends StatelessWidget {
                       color: Colors.white,
                       iconSize: 30,
                       onPressed: () {
-                        bloc.toggleFavorite(video);
+                        favoriteBloc.toggleFavorite(video);
                       },
                     );
                   } else {
