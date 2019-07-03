@@ -1,7 +1,9 @@
+import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
 
-import 'screens/home.dart';
 import 'api.dart';
+import 'blocs/videos_bloc.dart';
+import 'screens/home.dart';
 
 void main() {
   Api api = Api();
@@ -12,10 +14,13 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'FlutterTube',
-      home: Home(),
-      debugShowCheckedModeBanner: false,
+    return BlocProvider(
+      bloc: VideosBloc(),
+      child: MaterialApp(
+        title: 'FlutterTube',
+        home: Home(),
+        debugShowCheckedModeBanner: false,
+      ),
     );
   }
 }
