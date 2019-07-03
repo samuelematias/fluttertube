@@ -14,7 +14,6 @@
     <img alt="Flutter App 2" height="620" src="https://media.giphy.com/media/ibXbdbH4UzdOqF9zDj/giphy.gif" />
     <img alt="Flutter App 3" height="620" src="https://media.giphy.com/media/iibjzybZFCUmVGqJED/giphy.gif" />
     <img alt="Flutter App 4" height="620" src="https://media.giphy.com/media/iDaH7WJCCBuybyD3WQ/giphy.gif" />
- />
 </p>
 <!-- show case/gif section END -->
 
